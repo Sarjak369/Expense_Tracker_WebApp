@@ -510,7 +510,7 @@ if selected_tab == "Expense":
         if st.button('Delete Payee'):
             delete_payee(conn, int(id))
             st.success('Payee deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         st.subheader('Add Category')
         new_category = st.text_input('New Category')
@@ -527,7 +527,7 @@ if selected_tab == "Expense":
         if st.button('Delete Category'):
             delete_category(conn, int(id))
             st.success('Category deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         st.subheader('Add Account')
         new_account = st.text_input('New Account')
@@ -544,7 +544,7 @@ if selected_tab == "Expense":
         if st.button('Delete Account'):
             delete_account(conn, int(id))
             st.success('Account deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         if st.button('Export Expenses to CSV'):
             export_expenses_to_csv(conn)
@@ -595,7 +595,7 @@ elif selected_tab == 'Income':
         if st.button('Delete Income'):
             delete_income(conn, int(id))
             st.success('Income deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         st.subheader('Add Payer')
         new_payer = st.text_input('New Payer')
@@ -613,7 +613,7 @@ elif selected_tab == 'Income':
         if st.button('Delete Payer'):
             delete_payer(conn, int(id))
             st.success('Payer deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         st.subheader('Add Income Category')
         new_categoryI = st.text_input('New Income Category')
@@ -621,7 +621,7 @@ elif selected_tab == 'Income':
         if st.button('Add Income Category'):
             add_categoryI(conn, new_categoryI)
             st.success('Income Category added!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         if st.button('List IDs & Income Categories'):
             getIt = get_categoryI_L4D(conn)
@@ -631,7 +631,7 @@ elif selected_tab == 'Income':
         if st.button('Delete Income Category'):
             delete_categoryI(conn, int(id))
             st.success('Income Category deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         st.subheader('Add Account')
         new_account = st.text_input('New Account')
@@ -648,7 +648,7 @@ elif selected_tab == 'Income':
         if st.button('Delete Account'):
             delete_account(conn, int(id))
             st.success('Account deleted!')
-            st.experimental_rerun()
+            # st.experimental_rerun()
 
         if st.button('Export Income to CSV'):
             export_income_to_csv(conn)
