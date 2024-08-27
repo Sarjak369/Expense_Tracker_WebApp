@@ -26,7 +26,7 @@ fileRunI = 'AppEmail4I.py'
 
 def create_connection():
     try:
-        conn = sqlite3.connect(path+'exp_track.db')
+        conn = sqlite3.connect('exp_track.db')
         return conn
     except sqlite3.Error as e:
         print(f"Error occurred: {e}")
