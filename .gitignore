@@ -1,0 +1,4 @@
+.env
+
+
+# This ensures that Git will ignore the .env file and not track changes to it.
