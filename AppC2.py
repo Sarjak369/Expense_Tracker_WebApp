@@ -25,6 +25,7 @@ fileRunI = 'AppEmail4I.py'
 
 
 def create_connection():
+<<<<<<< HEAD
     conn = None
     try:
         conn = sqlite3.connect(path+'exp_track.db')
@@ -32,6 +33,14 @@ def create_connection():
         print(e)
 
     return conn
+=======
+    try:
+        conn = sqlite3.connect('exp_track.db')
+        return conn
+    except sqlite3.Error as e:
+        print(f"Error occurred: {e}")
+        return None
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 ### Income  ####
 
 
@@ -511,7 +520,11 @@ if selected_tab == "Expense":
         if st.button('Delete Payee'):
             delete_payee(conn, int(id))
             st.success('Payee deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         st.subheader('Add Category')
         new_category = st.text_input('New Category')
@@ -528,7 +541,11 @@ if selected_tab == "Expense":
         if st.button('Delete Category'):
             delete_category(conn, int(id))
             st.success('Category deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         st.subheader('Add Account')
         new_account = st.text_input('New Account')
@@ -545,7 +562,11 @@ if selected_tab == "Expense":
         if st.button('Delete Account'):
             delete_account(conn, int(id))
             st.success('Account deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         if st.button('Export Expenses to CSV'):
             export_expenses_to_csv(conn)
@@ -596,7 +617,11 @@ elif selected_tab == 'Income':
         if st.button('Delete Income'):
             delete_income(conn, int(id))
             st.success('Income deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         st.subheader('Add Payer')
         new_payer = st.text_input('New Payer')
@@ -614,7 +639,11 @@ elif selected_tab == 'Income':
         if st.button('Delete Payer'):
             delete_payer(conn, int(id))
             st.success('Payer deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         st.subheader('Add Income Category')
         new_categoryI = st.text_input('New Income Category')
@@ -622,7 +651,11 @@ elif selected_tab == 'Income':
         if st.button('Add Income Category'):
             add_categoryI(conn, new_categoryI)
             st.success('Income Category added!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         if st.button('List IDs & Income Categories'):
             getIt = get_categoryI_L4D(conn)
@@ -632,7 +665,11 @@ elif selected_tab == 'Income':
         if st.button('Delete Income Category'):
             delete_categoryI(conn, int(id))
             st.success('Income Category deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         st.subheader('Add Account')
         new_account = st.text_input('New Account')
@@ -649,7 +686,11 @@ elif selected_tab == 'Income':
         if st.button('Delete Account'):
             delete_account(conn, int(id))
             st.success('Account deleted!')
+<<<<<<< HEAD
             st.experimental_rerun()
+=======
+            # st.experimental_rerun()
+>>>>>>> 394e1f947542cc19e4bd607254bc779933f0baac
 
         if st.button('Export Income to CSV'):
             export_income_to_csv(conn)

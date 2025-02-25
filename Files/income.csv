@@ -1,0 +1,5 @@
+id,date,amount,payer,categoryI,account,note
+1,2025-01-01,3000,Rutgers Univeristy,Full-time,Sarjak,Full-time monthly paycheck.
+2,2025-01-15,2000,MIT,Part-Time,Sarjak,Part-time job monthly payment.
+3,2025-02-01,3000,Rutgers Univeristy,Full-time,Sarjak,Full-time job monthly income.
+4,2025-02-15,2000,MIT,Part-Time,Sarjak,Part-time job monthly income.
