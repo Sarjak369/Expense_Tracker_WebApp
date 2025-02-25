@@ -482,36 +482,52 @@ else:
 
 
 # 🔹 ADD THE FOOTER AT THE END
-# Sticky Footer Section
+
 footer_html = """
-    <style>
-        .footer-container {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 16px;
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-    <div class="footer-container">
-        <p style="margin: 5px; font-weight: bold; color: black;">
-            Made with ❤️ by Sarjak Maniar
-        </p>
-        <div>
-            <a href="https://www.linkedin.com/in/sarjak369/" target="_blank" style="text-decoration: none; margin: 0 10px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="22px" style="vertical-align: middle;"/> LinkedIn
-            </a>
-            <a href="https://github.com/Sarjak369" target="_blank" style="text-decoration: none; margin: 0 10px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="22px" style="vertical-align: middle;"/> GitHub
-            </a>
-            <a href="mailto:sarjkm369@gmail.com" style="text-decoration: none; margin: 0 10px;">
-                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="22px" style="vertical-align: middle;"/> Email
-            </a>
-        </div>
-    </div>
+<style>
+.footer-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;  /* space above footer so it doesn't crowd content */
+}
+
+.footer-container p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+    display: inline-block; /* keep text & links in one line */
+}
+
+.footer-container a {
+    text-decoration: none;
+    margin: 0 10px; /* spacing between links */
+    color: #ff4b4b;
+    font-weight: 600;
+}
+
+.footer-container img {
+    width: 18px; 
+    vertical-align: middle;
+    margin-right: 5px; /* space between icon & text */
+}
+</style>
+
+<div class="footer-container">
+    <p>
+        Made with ❤️ by Sarjak Maniar | 
+        <a href="https://www.linkedin.com/in/sarjak369/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/> LinkedIn
+        </a>
+        <a href="https://github.com/Sarjak369" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/> GitHub
+        </a>
+        <a href="mailto:sarjkm369@gmail.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"/> Email
+        </a>
+    </p>
+</div>
 """
 st.markdown(footer_html, unsafe_allow_html=True)
