@@ -51,6 +51,14 @@ create_table(conn)
 st.set_page_config(page_title='Finance Tracker',
                    page_icon=':coin:', layout='wide')
 
+
+# 🔹 ADD THE TITLE AT THE TOP
+st.markdown(
+    "<h1 style='text-align: center;'>Expense Tracker Web App</h1>",
+    unsafe_allow_html=True
+)
+
+
 # ----------------------------------
 # Navigation Tabs
 # ----------------------------------
@@ -74,6 +82,7 @@ html_code = """
     </style>
 """
 st.markdown(html_code, unsafe_allow_html=True)
+
 
 # ----------------------------------
 # Plotting Helpers (Summary Tab)
@@ -470,3 +479,54 @@ else:
         st.plotly_chart(fig_bar)
     else:
         st.write("No data available for Category-wise Expenses and Income chart.")
+
+
+# 🔹 ADD THE FOOTER AT THE END
+st.markdown(
+    """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-top: 1px solid #ccc;
+        }
+        .footer a {
+            color: #ff4b4b;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-icons {
+            font-size: 18px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+    <div class="footer">
+        Made with ❤️ by <b>Sarjak Maniar</b> <br>
+        <a href="https://www.linkedin.com/in/sarjak369/" target="_blank">
+            <i class="fab fa-linkedin footer-icons"></i>LinkedIn
+        </a>
+        <a href="https://github.com/Sarjak369" target="_blank">
+            <i class="fab fa-github footer-icons"></i>GitHub
+        </a>
+        <a href="mailto:sarjkm369@gmail.com">
+            <i class="fas fa-envelope footer-icons"></i>Email
+        </a>
+    </div>
+    
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    """,
+    unsafe_allow_html=True
+)
