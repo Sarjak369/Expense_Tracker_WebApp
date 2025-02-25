@@ -482,51 +482,36 @@ else:
 
 
 # 🔹 ADD THE FOOTER AT THE END
-st.markdown(
-    """
+# Sticky Footer Section
+footer_html = """
     <style>
-        .footer {
+        .footer-container {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
             background-color: #f8f9fa;
             text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            font-weight: bold;
-            border-top: 1px solid #ccc;
-        }
-        .footer a {
-            color: #ff4b4b;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        .footer-icons {
-            font-size: 18px;
-            vertical-align: middle;
-            margin-right: 5px;
+            padding: 15px 0;
+            font-size: 16px;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
-    <div class="footer">
-        Made with ❤️ by <b>Sarjak Maniar</b> <br>
-        <a href="https://www.linkedin.com/in/sarjak369/" target="_blank">
-            <i class="fab fa-linkedin footer-icons"></i>LinkedIn
-        </a>
-        <a href="https://github.com/Sarjak369" target="_blank">
-            <i class="fab fa-github footer-icons"></i>GitHub
-        </a>
-        <a href="mailto:sarjkm369@gmail.com">
-            <i class="fas fa-envelope footer-icons"></i>Email
-        </a>
+    <div class="footer-container">
+        <p style="margin: 5px; font-weight: bold; color: black;">
+            Made with ❤️ by Sarjak Maniar
+        </p>
+        <div>
+            <a href="https://www.linkedin.com/in/sarjak369/" target="_blank" style="text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="22px" style="vertical-align: middle;"/> LinkedIn
+            </a>
+            <a href="https://github.com/Sarjak369" target="_blank" style="text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="22px" style="vertical-align: middle;"/> GitHub
+            </a>
+            <a href="mailto:sarjkm369@gmail.com" style="text-decoration: none; margin: 0 10px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="22px" style="vertical-align: middle;"/> Email
+            </a>
+        </div>
     </div>
-    
-    <!-- Load Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    """,
-    unsafe_allow_html=True
-)
+"""
+st.markdown(footer_html, unsafe_allow_html=True)
