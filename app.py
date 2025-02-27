@@ -28,7 +28,8 @@ from db_functions import (
     add_categoryI,
     get_categoryI_L4D,
     delete_categoryI,
-    add_account
+    add_account,
+    add_category
     # ... any other functions you need
 )
 
@@ -239,7 +240,7 @@ if selected_tab == "Expense":
         new_category = st.text_input('New Category', key="new_category_input")
         if st.button('Add Category', key="add_category_button"):
             if new_category.strip():
-                add_categoryI(conn, new_category.strip())
+                add_category(conn, new_category.strip())
                 st.success(f'Category "{new_category}" added!')
 
         if st.button('List Categories', key="list_categories_button"):
