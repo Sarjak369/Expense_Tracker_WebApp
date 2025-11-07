@@ -53,6 +53,24 @@ Expense_Tracker_WebApp/
 - **Pie Charts**: Compare expense vs. income distribution.
 - **Bar Charts**: Analyze category-wise spending patterns.
 
+## UI Snapshots
+
+<img width="1905" height="900" alt="1" src="https://github.com/user-attachments/assets/ff671e6a-aeb8-40f7-bd3c-f8b563ee8cff" />
+
+<img width="1909" height="855" alt="2" src="https://github.com/user-attachments/assets/89ba4554-fc1d-4a37-a822-81c268286950" />
+
+<img width="1897" height="877" alt="3" src="https://github.com/user-attachments/assets/40ff8bf2-2c3a-4bd6-af46-6567209ebef5" />
+
+<img width="1904" height="914" alt="4" src="https://github.com/user-attachments/assets/9f863e47-7ee7-4cca-9268-cb9a07f4008c" />
+
+<img width="1889" height="898" alt="5" src="https://github.com/user-attachments/assets/5c4cedf4-5b0a-476d-882e-6a049f59ae3d" />
+
+<img width="1908" height="915" alt="6" src="https://github.com/user-attachments/assets/7e56629b-9169-44d6-87ff-2da57d93ffac" />
+
+<img width="1902" height="791" alt="7" src="https://github.com/user-attachments/assets/502d99d6-644d-400d-8892-d1c5e80b4035" />
+
+<img width="1890" height="563" alt="8" src="https://github.com/user-attachments/assets/0a915818-e1a7-4d42-9dc6-750b317ae473" />
+
 ## 🔧 Setup & Installation
 ### **1️⃣ Clone the Repository**
 ```sh
